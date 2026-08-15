@@ -24,18 +24,17 @@ _Current release: v0.2.64_
 ### macOS (Apple Silicon)
 
 1. Download `glowie-ai-solver-macos-arm64.zip` and unzip — keep `_internal/` beside the binary
-2. **Double-click `Open Glowie.command`** (in the unzipped folder)
-   - If macOS says it cannot verify the file: **Right-click → Open → Open** (once)
-   - That clears Apple's download quarantine and launches the solver
-3. If you still see **“Python Not Opened”**:
-   **System Settings → Privacy & Security** → scroll down → **Open Anyway**,
-   then run `Open Glowie.command` again
+2. **Only** double-click **`Open Glowie.command`**
+   - Do **not** open `Python` or anything inside `_internal` first
+     (that shows “Python is damaged” while Chrome quarantine is active)
+   - If macOS blocks the `.command`: **Right-click → Open → Open** (once)
+3. If you already saw “damaged”: click **Cancel**, then use `Open Glowie.command`
 4. Paste your OpenRouter API key in the dashboard
 
-Terminal alternative (same fix):
+Terminal alternative:
 ```bash
 xattr -cr ~/Downloads/glowie-ai-solver
-cd ~/Downloads/glowie-ai-solver && ./glowie-ai-solver
+open ~/Downloads/glowie-ai-solver/Open\ Glowie.command
 ```
 
 The app keeps content (prompts / pricing / models) up to date automatically.
