@@ -23,11 +23,17 @@ _Current release: v0.2.64_
 
 ### macOS (Apple Silicon)
 
-1. Download `glowie-ai-solver-macos-arm64.zip` and unzip
-2. Clear quarantine once: `xattr -dr com.apple.quarantine ~/Downloads/glowie-ai-solver`
-3. Run: `cd ~/Downloads/glowie-ai-solver && ./glowie-ai-solver`
-   (keep `_internal/` beside the binary; `chmod +x ./glowie-ai-solver` if needed)
-4. Paste your OpenRouter API key in the dashboard
+1. Download `glowie-ai-solver-macos-arm64.zip` and unzip — keep `_internal/` beside the binary
+2. **Double-click `Open Glowie.command`** (in the unzipped folder)
+   - If macOS says it cannot verify the file: **Right-click → Open → Open** (once)
+   - That clears Apple's download quarantine and launches the solver
+3. Paste your OpenRouter API key in the dashboard
+
+Terminal alternative (same fix):
+```bash
+xattr -dr com.apple.quarantine ~/Downloads/glowie-ai-solver
+cd ~/Downloads/glowie-ai-solver && ./glowie-ai-solver
+```
 
 The app keeps content (prompts / pricing / models) up to date automatically.
 Binary updates on macOS require re-downloading the zip and replacing the folder.
