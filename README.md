@@ -27,11 +27,14 @@ _Current release: v0.2.64_
 2. **Double-click `Open Glowie.command`** (in the unzipped folder)
    - If macOS says it cannot verify the file: **Right-click → Open → Open** (once)
    - That clears Apple's download quarantine and launches the solver
-3. Paste your OpenRouter API key in the dashboard
+3. If you still see **“Python Not Opened”**:
+   **System Settings → Privacy & Security** → scroll down → **Open Anyway**,
+   then run `Open Glowie.command` again
+4. Paste your OpenRouter API key in the dashboard
 
 Terminal alternative (same fix):
 ```bash
-xattr -dr com.apple.quarantine ~/Downloads/glowie-ai-solver
+xattr -cr ~/Downloads/glowie-ai-solver
 cd ~/Downloads/glowie-ai-solver && ./glowie-ai-solver
 ```
 
