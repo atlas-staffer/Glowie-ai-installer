@@ -8,7 +8,7 @@ AI-powered captcha solving module.
 
 **macOS (Apple Silicon):** [Download Latest](https://github.com/atlas-staffer/Glowie-ai-installer/releases/latest/download/glowie-ai-solver-macos-arm64.zip)
 
-_Current release: v0.2.92_
+_Current release: v0.2.93_
 
 ## Usage
 
